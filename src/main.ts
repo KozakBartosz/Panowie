@@ -1,17 +1,9 @@
 import './style.css';
-import { heroAnimation } from './heroAnimation.ts';
-import { buttonsAnimation } from './buttonsAnimation.ts';
+import { parallaxEffect } from './parallaxEffect.ts';
+import { animateButtons } from './animateButtons.ts';
 
-const hero = document.querySelector('#hero');
+parallaxEffect();
 
-if (hero != null) {
-    heroAnimation(hero);
-}
-
-const buttons = document.querySelectorAll(
-    '.button__animation'
-) as NodeListOf<HTMLElement>;
-
-if (hero != null) {
-    buttonsAnimation(buttons);
-}
+// watchCursorLocalPosition
+const buttons = document.querySelectorAll<HTMLElement>('[animateButton]');
+animateButtons(buttons);

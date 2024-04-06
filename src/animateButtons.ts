@@ -1,4 +1,4 @@
-export function buttonsAnimation(elements: NodeListOf<HTMLElement>) {
+export function animateButtons(elements: NodeListOf<HTMLElement>) {
     elements.forEach((element) => {
         element.addEventListener('pointermove', (e) => {
             const rect = element.getBoundingClientRect();
