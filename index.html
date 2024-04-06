@@ -1,13 +1,47 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Bartosz Kozak">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Panowie i Panie oto zadanie rekrutacyjne - Bartosz Kozak</title>
+</head>
+
+<body>
+  <header id="hero" class="hero container">
+    <div class="hero-image" style="background-image: linear-gradient(0deg,#BD9F8A,#205564)">
+      <picture>
+        <!-- <source srcset='large.webp' media='(min-width: 992px)' type='image/webp'> -->
+        <!-- <source srcset='large.jpg' media='(min-width: 992px)' type='image/jpeg'> -->
+        <img src='/hero.png'
+          alt='A sand dune with in the foreground and clear blue sky and a few small clouds in the background'>
+      </picture>
+    </div>
+    <h1 class="hero-title">Panowie</h1>
+    <div class="hero-content">
+      <p>
+        We are Panowie Pro.<br />
+        A software studio for <a href="">creatives.</a>
+      </p>
+      <a href="/strestest.html" class="button button__animation">
+        <span class="button-text">Work with us</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="placeholder"></div>
+  </main>
+  <footer class="footer container">
+    <p>&copy; 2024 Panowie Pro and <a href="https://kozakbartosz.pl" rel="nofollow">KozakBartosz.pl</a> All rights
+      reserved.</p>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
