@@ -14,6 +14,6 @@ export function parallaxEffect() {
             );
         });
     };
-    window.addEventListener('resize', () => setOffsets);
+    window.addEventListener('resize', () => setOffsets());
     setOffsets();
 }

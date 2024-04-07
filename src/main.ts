@@ -4,6 +4,5 @@ import { animateButtons } from './animateButtons.ts';
 
 parallaxEffect();
 
-// watchCursorLocalPosition
 const buttons = document.querySelectorAll<HTMLElement>('[animateButton]');
 animateButtons(buttons);
